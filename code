@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main () {
+            int a;
+            printf("a= ");
+            scanf("%d", &a);
+int mul = 1;
+
+
+  
+                                                for(int i=1; i<=a; i++) {
+                                                
+                                                    mul = mul*i;
+                                                }
+
+
+  
+int i=1;
+do
+{
+    mul = mul*i;
+    i++;
+
+} while (i<=a);
+
+
+
+  
+                                                    int i=1;
+                                                    while (i<=a)
+                                                    {
+                                                        mul = mul*i;
+                                                        i++;
+                                                    }
+
+
+
+printf("%d", mul);
+
+return 0;
+}
