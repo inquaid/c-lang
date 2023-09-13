@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int funt(/*int a,b,c... */) { 
+int funt(/*int a,b,c... */ and these are called formal parameters) { 
    /*command*/
 /*please give focus on return part*/
 }
@@ -8,7 +8,7 @@ int funt(/*int a,b,c... */) {
 int main() {
     /*code*/ 
 
-    int funt();
+    int funt(here we put actual parameters or arguments);
     int funt();
     int funt();        /*function calling*/
     int funt();
