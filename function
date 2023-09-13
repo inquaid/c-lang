@@ -16,3 +16,33 @@ int main() {
 }
 
 
+
+#include<stdio.h>
+
+
+void square(int n) {
+    n = n * n;
+printf("square is %d\n", n);
+}
+
+
+int sqa(int n) {
+    n=n*n;
+    return n;
+}
+
+
+int main() {
+    int a=4;
+                                square(a);
+   
+   
+                                 printf("sqa is %d", sqa(a));
+                                 
+    return 0;
+}
+
+if i use void as function then i can print under that function.
+but if i use int as function then i get return value, which i can later on print under int main() 
+
+
