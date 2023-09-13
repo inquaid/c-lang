@@ -2,6 +2,7 @@
 @@Parameter:@@
 ```
 is a variable in the declaration and defination of the function.
+in short parameters that are received by a function.
 ```diff
 @@Argument:@@
 ```
