@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int funt(/*int a,b,c... */) { 
+   /*command*/
+/*please give focus on return part*/
+}
+
+int main() {
+    /*code*/ 
+
+    int funt();
+    int funt();
+    int funt();        /*function calling*/
+    int funt();
+    
+}
+
+
