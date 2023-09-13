@@ -1,2 +1,1 @@
-# loops
-for loop, while loop, do while loop.
+Here I'll upload each and every details I get to know ...
