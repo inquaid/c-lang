@@ -1,1 +1,2 @@
-a += x  means  a = a+x
+a += x      means  a = a+x
+(*pntr)++   means  the address of *pntr gets increment. not pntr itself
