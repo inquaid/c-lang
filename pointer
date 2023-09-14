@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    // Declare a variable
+    int x = 42;
+
+    // Declare a pointer variable of the same type
+    int *ptr;
+
+    // Assign the address of the variable to the pointer
+    ptr = &x;
+
+    // Access the value using the pointer
+    printf("Value of x: %d\n", *ptr);
+
+    // Modify the value using the pointer
+    *ptr = 123;
+
+    // Check the modified value
+    printf("Modified value of x: %d\n", x);
+
+    return 0;
+}
