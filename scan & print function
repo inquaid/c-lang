@@ -1,0 +1,16 @@
+#include<stdio.h>
+void scan(int *l) {
+scanf("%d", l);
+
+}
+
+void print(int l) {
+printf("%d", l);
+}
+int main() {
+  int a;
+scan(&a);
+print(a);
+
+  return 0;
+}
