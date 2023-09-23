@@ -1,16 +1,24 @@
-#include<stdio.h>
-void scan(int *l) {
-scanf("%d", l);
-
+#include <stdio.h>
+#define n 5
+void scan(int *ary, int a)
+{
+  for (int i = 0; i < a; i++)
+  {
+    scanf("%d", &ary[i]);
+  }
+}
+void print(int *ary, int b)
+{
+  for (int i = 0; i < b; i++)
+  {
+    printf("%d ", ary[i]);
+  }
 }
 
-void print(int l) {
-printf("%d", l);
-}
-int main() {
-  int a;
-scan(&a);
-print(a);
-
+int main()
+{
+  int ary[n];
+  scan(ary, n);
+  print(ary, n);
   return 0;
 }
