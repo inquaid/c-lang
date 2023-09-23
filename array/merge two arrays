@@ -1,0 +1,35 @@
+#include <stdio.h>
+#define n 3
+void scan(int *ary, int a)
+{
+  for (int i = 0; i < a; i++)
+  {
+    scanf("%d", &ary[i]);
+  }
+}
+
+void print(int *ary, int b)
+{
+  for (int i = 0; i < b; i++)
+  {
+    printf("%d ", ary[i]);
+  }
+  printf("\n");
+}
+
+int main()
+{
+  int ary[n], arr[n], aryn[n + n];
+  scan(ary, n);
+  print(ary, n);
+
+  scan(arr, n);
+  print(arr, n);
+
+  for (int i = 0; i < n; i++)
+  {
+    aryn[i * 2] = ary[i];     // 0 2 4 ...
+    aryn[i * 2 + 1] = arr[i]; // 1 3 5 ...
+  }
+  print(aryn, (n + n));
+}
