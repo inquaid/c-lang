@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define n 5
+#define n 3
 void scan(int *ary, int a)
 {
   for (int i = 0; i < a; i++)
@@ -14,16 +14,32 @@ void print(int *ary, int b)
   {
     printf("%d ", ary[i]);
   }
+  printf("\n");
 }
 
 int main()
 {
-  int ary[n], arr[n];
+  int ary[n], arr[n], aryn[n + n];
   scan(ary, n);
+
+  // print(ary, n);
+
+  scan(arr, n);
+  // print(arr, n);
 
   for (int i = 0; i < n; i++)
   {
-    arr[i] = ary[i];
+    aryn[i * 2] = ary[i];     // 0 2 4 ...
+    aryn[i * 2 + 1] = arr[i]; // 1 3 5 ...
   }
-  print(arr, n);
+  int m = n + n;
+  print(aryn, (m));
+
+  int reverse[m];
+  for (int i = 0, j = m - 1; i < m, j >= 0; i++, j--)
+  {
+    reverse[j] = aryn[i];
+  }
+
+  print(reverse, (m));
 }
