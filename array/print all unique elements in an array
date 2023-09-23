@@ -1,0 +1,44 @@
+#include <stdio.h>
+#define n 10
+void scan(int *ary, int a)
+{
+  for (int i = 0; i < a; i++)
+  {
+    scanf("%d", &ary[i]);
+  }
+}
+
+void print(int *ary, int b)
+{
+  for (int i = 0; i < b; i++)
+  {
+    printf("%d ", ary[i]);
+  }
+}
+
+void unique(int *ary, int c)
+{
+  for (int i = 0; i < n; i++)
+  {
+    int duplicate = 0;
+
+    for (int j = 0; j < n; j++)
+    {
+
+      if (i != j && ary[i] == ary[j])
+      {
+        duplicate = 1;
+        break;
+      }
+    }
+    if (!duplicate)
+      printf("%d ", ary[i]);
+  }
+}
+int main()
+{
+  int ary[n], sum = 0;
+  scan(ary, n);
+  unique(ary, n);
+  return 0;
+}
