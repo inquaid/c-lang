@@ -1,1 +1,2 @@
 int integerVal = atoi(str);           to convert a string containing an integer into an actual integer
+int integerVal = atol(str);           to convert a string containing an long long integer into an actual integer
