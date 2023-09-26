@@ -1,0 +1,1 @@
+snprintf : to safely convert a or a bunch of integer to a string and store it 
