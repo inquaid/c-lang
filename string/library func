@@ -1,1 +1,13 @@
-snprintf : to safely convert a or a bunch of integer to a string and store it 
+snprintf(str, sizeof(str), "%d", a);  to safely convert a or a bunch of integer to a string and store it 
+           
+
+strlen(str);                          to count the elements present in the string.
+
+strcpy(newStr,oldStr);                to store old strings data into new one.
+
+strcat(str1,str2);                    to merge two strings and data is saved in the str1.
+
+strcpm(str1,str2);                    to compare two strings.
+                                      if output is 0 [both strings are equal]
+                                      if output is positive [str1>str2]
+                                      if output is negetive [str1<str2]
