@@ -11,3 +11,5 @@ strcpm(str1,str2);                    to compare two strings.
                                       if output is 0 [both strings are equal]
                                       if output is positive [str1>str2]
                                       if output is negetive [str1<str2]
+
+int integerVal = atoi(str);           to convert a string containing an integer into an actual integer
