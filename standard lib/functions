@@ -1,0 +1,1 @@
+int integerVal = atoi(str);           to convert a string containing an integer into an actual integer
