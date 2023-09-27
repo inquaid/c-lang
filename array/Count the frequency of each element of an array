@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main()
+{
+  int arr[] = {1, 2, 2, 3, 4, 4, 4, 5};
+  int n = sizeof(arr) / sizeof(arr[0]);
+
+  // Initialize an array to store the frequency of each element
+  int frequency[n];
+
+  for (int i = 0; i < n; i++)
+  {
+    frequency[i] = -1; // Initialize all frequencies to -1
+  }
+
+  for (int i = 0; i < n; i++)
+  {
+    int count = 1;
+
+    for (int j = i + 1; j < n; j++)
+    {
+      if (arr[i] == arr[j])
+      {
+        count++;
+
+        // To avoid counting the same element again
+        frequency[j] = 0;
+      }
+    }
+
+    // If the element's frequency has not been counted yet
+    if (frequency[i] != 0)
+    {
+      frequency[i] = count;
+    }
+  }
+
+  // Print the frequency of each element
+  printf("Element\tFrequency\n");
+  for (int i = 0; i < n; i++)
+  {
+    if (frequency[i] != 0)
+    {
+      printf("%d\t%d\n", arr[i], frequency[i]);
+    }
+  }
+
+  return 0;
+}
