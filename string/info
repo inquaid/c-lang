@@ -1,0 +1,11 @@
+after scanning a integer if i want to use gets() then i hate to put getchat(); which called dummy getchar()
+
+#include<stdio.h>
+#include<string.h>
+int main() {
+  int e;
+  scanf("%d", &e);
+  
+  char str[e];
+  getchar();
+  gets(str);
