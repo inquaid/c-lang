@@ -1,0 +1,38 @@
+<stdio.h> (Standard Input/Output):
+Provides functions for input and output operations, including printf, scanf, fopen, fclose, and more.
+Used for reading and writing to files, as well as for console input and output.
+
+<ctype.h> (Character Handling):
+Contains functions for character classification and conversion, such as isalpha, isdigit, tolower, and toupper.
+  
+<stdbool.h> (Boolean Types):
+Defines the bool type and boolean constants true and false.
+Used for boolean operations and conditional expressions.
+  
+<stddef.h> (Standard Definitions):
+Defines several standard macros, such as NULL, size_t, and ptrdiff_t.
+Used for working with pointers, memory allocation, and array indexing.
+
+<stdint.h> (Standard Integer Types):
+Defines fixed-size integer types like int8_t, int16_t, int32_t, uint8_t, and uint16_t, which guarantee a specific number of bits.
+Useful for writing portable code that relies on specific integer sizes.
+  
+<time.h> (Date and Time):
+Provides functions and types for working with date and time values.
+Used for tasks involving date and time calculations.
+
+<limits.h> (Implementation-Defined Constants):
+Defines implementation-specific constants, such as the minimum and maximum values for integer types.
+Helps in writing code that depends on the characteristics of the underlying system.
+  
+<errno.h> (Error Codes):
+Defines error codes and provides access to the global errno variable.
+Used for error handling and reporting.
+  
+<assert.h> (Assertions):
+Provides the assert macro for inserting debugging assertions into your code.
+Useful for verifying conditions during debugging.
+
+<stdarg.h> (Variable Argument Lists):
+Contains functions and macros for working with variable-length argument lists, such as those used in printf and scanf functions.
+Used when defining functions that accept a variable number of arguments.
