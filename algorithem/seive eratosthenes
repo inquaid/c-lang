@@ -2,9 +2,9 @@
 #include <stdbool.h>
 #include <math.h>
 
-void seiveP(int d)
+void seiveP(int a)
 {
-    int a = 100;
+
     bool isPrime[a + 1];
     for (int i = 0; i <= a; i++)
     {
@@ -25,28 +25,18 @@ void seiveP(int d)
     int count = 0;
     for (int i = 0; i <= a; i++)
     {
-        if (isPrime[i] && i == d)
+        if (isPrime[i])
         {
-            count = 1;
-            break;
+            printf("%d ", i);
         }
-    }
-    if (count)
-    {
-        printf("YES\n");
-    }
-    else if (!count)
-    {
-        printf("NO\n");
     }
 }
 
 int main()
 {
-    int n;
-    scanf("%d", &n);
-    // printf("%d", n);
-    seiveP(n);
+    int a;
+    scanf("%d", &a);
+    seiveP(a);
 
     return 0;
 }
