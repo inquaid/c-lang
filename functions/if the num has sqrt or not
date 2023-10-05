@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <math.h>
+
+int qrt(int d)
+{
+    int a = 100;
+    bool ary[a + 1];
+    for (int i = 0; i <= a; i++)
+    {
+        ary[i] = false;
+    }
+    for (int k = 2; k * k <= a; k++)
+    {
+        if (!ary[k])
+        {
+            for (int i = k * k; i <= a; i = i * i)
+            {
+                ary[i] = true;
+            }
+        }
+    }
+    int count = 0;
+    for (int i = 0; i <= a; i++)
+    {
+        if (ary[i] && i == d)
+        {
+            count = 1;
+            break;
+        }
+    }
+    if (count)
+    {
+        return d;
+    }
+    else
+        return 1;
+}
+
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    int p = qrt(n);
+    // printf("%d", p);
+    if (p == n)
+        printf("YES");
+    else
+        printf("NO");
+
+    return 0;
+}
