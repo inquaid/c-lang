@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <math.h>
+
+void seiveP(int d)
+{
+    int a = 100;
+    bool isPrime[a + 1];
+    for (int i = 0; i <= a; i++)
+    {
+        isPrime[i] = true;
+    }
+    isPrime[0] = isPrime[1] = false;
+
+    for (int k = 2; k * k <= a; k++)
+    {
+        if (isPrime[k])
+        {
+            for (int i = k * k; i <= a; i = i + k)
+            {
+                isPrime[i] = false;
+            }
+        }
+    }
+    int count = 0;
+    for (int i = 0; i <= a; i++)
+    {
+        if (isPrime[i] && i == d)
+        {
+            count = 1;
+            break;
+        }
+    }
+    if (count)
+    {
+        printf("YES\n");
+    }
+    else if (!count)
+    {
+        printf("NO\n");
+    }
+}
+
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    // printf("%d", n);
+    seiveP(n);
+
+    return 0;
+}
