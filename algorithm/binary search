@@ -1,0 +1,35 @@
+int binary_search(int ary[], int n, int target)
+{
+    int low = 0;
+    int high = n - 1;
+    while (low <= high)
+    {
+        int mid = (low + high) / 2;
+        int midvalue = ary[mid];
+        if (midvalue == target)
+            return mid;
+        else if (midvalue < target)
+        {
+            low = mid + 1;
+        }
+        else
+        {
+            high = mid - 1;
+        }
+    }
+    return -1;
+}
+
+
+//to get result
+int result = binary_search(ary, 1000000, d);
+{
+    if (result >= 0)
+    {
+        printf("YES");
+    }
+    else
+    {
+        printf("NO");
+    }
+}
