@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    int arr[5];
+
+    // Initialize arr with the value 10
+    memset(arr, 10, sizeof(arr));
+
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
