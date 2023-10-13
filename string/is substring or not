@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+int isSubS(const char *a, const char *b)
+{
+  char *result = strstr(a, b);
+  return (result != NULL);
+}
+
+int main()
+{
+  char a[100], b[100];
+  gets(a);
+  gets(b);
+
+  // char *result= strstr(a,b);
+  // if(result) printf("yalk");
+  // if(!result) printf("nalk");
+
+  if (isSubS(a, b))
+    printf("yes");
+  if (!isSubS(a, b))
+    printf("no");
+
+  // int view=isSubS(a,b);
+  // printf("%d", view);
+}
