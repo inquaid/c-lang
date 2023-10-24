@@ -1,0 +1,2 @@
+char *str = (char *)malloc(1000 * sizeof(char));
+ char **array2D = (char **)malloc(rows * sizeof(char *)); //for2D
